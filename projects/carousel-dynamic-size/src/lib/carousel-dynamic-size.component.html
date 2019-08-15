@@ -1,0 +1,17 @@
+<div class="dynamic-carousel" (resized)="onResized($event, -1)">
+  <div class="carousel-content" #dynamicCarousel>
+    <div *ngFor="let step of slides; let i = index" class="slide" [class.active]="i === counter" [attr.data-index]="i"
+         (swipeleft)="disableControls ? swipe('next') : ''" (swiperight)="disableControls ? swipe('prev'):''"
+         (resized)="onResized($event, i)">
+      <ng-template [ngTemplateOutlet]="step['innerTemplate']"></ng-template>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control carousel-control-prev" (click)="disableControls ? swipe('prev'):''">
+    <span class="icon-prev carousel-control-prev-icon" aria-hidden="true"></span>
+  </a>
+  <a class="right carousel-control carousel-control-next" (click)="disableControls ? swipe('next') : ''">
+    <span class="icon-next carousel-control-next-icon" aria-hidden="true"></span>
+  </a>
+</div>

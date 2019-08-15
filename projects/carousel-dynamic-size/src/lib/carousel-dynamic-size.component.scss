@@ -1,0 +1,46 @@
+/* Slider */
+
+.adjust-content {
+  width: 100%;
+  overflow: hidden;
+}
+
+.dynamic-carousel {
+  position: relative;
+  .slide, & {
+    background-color: #4d4d4d;
+  }
+  .carousel-content {
+    display: flex;
+  }
+  .slide img{
+    opacity: 0.2;
+  }
+  .active.slide img{
+    opacity: 1;
+  }
+  .my-style {
+    width: auto !important;
+    height: auto !important;
+    border: none !important;
+  }
+  .my-style.item-carousel.next, .my-style.item-carousel.prev {
+    opacity: .3 !important;
+  }
+
+
+
+  .carousel-control-next, .carousel-control-prev {
+    opacity: 1;
+  }
+
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    background-size: inherit;
+  }
+  .carousel-control-next-icon {
+    background-image: url("assets/img/FlechaNextWhite.png");
+  }
+  .carousel-control-prev-icon {
+    background-image: url("assets/img/FlechaPrevWhite.png");
+  }
+}

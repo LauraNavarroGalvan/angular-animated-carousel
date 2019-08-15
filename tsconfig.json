@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "carousel-dynamic-size": [
+        "dist/carousel-dynamic-size"
+      ],
+      "carousel-dynamic-size/*": [
+        "dist/carousel-dynamic-size/*"
+      ]
+    }
   }
 }
