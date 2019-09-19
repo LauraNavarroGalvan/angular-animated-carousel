@@ -1,6 +1,25 @@
 {
   "name": "angular-carousel",
-  "version": "0.0.0",
+  "version": "0.0.2",
+  "author": {
+    "name": "Laura Cristina Navarro Galvan",
+    "email": "laura.ngalvan@gmail.com"
+  },
+  "keywords": [
+    "Angular",
+    "Library",
+    "Carousel",
+    "Dynamic",
+    "Animated",
+    "carousel-animated",
+    "carousel-dynamic",
+    "angular-carousel",
+    "angular-animated-carousel"
+  ],
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/LauraNavarroGalvan/angular-carousel.git"
+},
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +27,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:dynamic": "ng-packagr -p projects/carousel-dynamic-size/ng-package.json; cp README.md dist/carousel-dynamic-size/README.md; cp LICENSE dist/carousel-dynamic-size/LICENSE"
+    "build:lib": "ng-packagr -p projects/angular-animated-carousel/ng-package.json"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +40,7 @@
     "@angular/platform-browser-dynamic": "~7.1.0",
     "@angular/router": "~7.1.0",
     "angular-resize-event": "^1.0.0",
+    "animate.css": "^3.7.2",
     "core-js": "^2.5.4",
     "hammerjs": "^2.0.8",
     "rxjs": "~6.3.3",

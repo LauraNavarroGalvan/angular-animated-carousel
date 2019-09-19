@@ -19,11 +19,11 @@
       "dom"
     ],
     "paths": {
-      "carousel-dynamic-size": [
-        "dist/carousel-dynamic-size"
+      "angular-animated-carousel": [
+        "dist/angular-animated-carousel"
       ],
-      "carousel-dynamic-size/*": [
-        "dist/carousel-dynamic-size/*"
+      "angular-animated-carousel/*": [
+        "dist/angular-animated-carousel/*"
       ]
     }
   }

@@ -1,0 +1,280 @@
+.container {
+  padding-bottom: 69px;
+  padding-top: 60px;
+  .title-container {
+    margin: 0 12.7%;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    &::after {
+      content: "";
+      display: block;
+      position: relative;
+      width: 20px;
+      border-top: 2px solid #E0BB4A;
+      margin: 24px auto;
+    }
+
+  }
+}
+.commentaries {
+  // Comments Component
+  .comments-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 528px;
+    padding-top: 5.5px;
+    padding-bottom: 25.5px;
+    margin: auto !important;
+    .comment-picture {
+      margin: auto;
+      max-width: 90px;
+      height: 90px;
+      img {
+        border-radius: 50%;
+        max-width: 100%;
+      }
+
+    }
+
+    .comment-text {
+      margin: auto 0;
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: calc(100% - 100px);
+
+      @media (min-width: 860px) {
+        padding-left: 20px;
+      }
+
+    }
+    .comment-title {
+      font-size: 15px;
+      line-height: 16px;
+      color: #303030;
+      white-space: pre;
+      margin-bottom: 0;
+    }
+    .comment-info {
+      font-size: 13px;
+      line-height: 16px;
+      color: #707070;
+      margin: 17px auto 0;
+      @media (min-width: 560px){
+        margin-right: 15px;
+      }
+      @media (min-width: 860px){
+        margin-right: 0;
+      }
+    }
+
+    .comment-picture {
+      -webkit-flex: 0 0 90px;      /* Safari 6.1+. iOS 7.1+, BB10 */
+      -ms-flex: 0 0 90px;           /* IE 10 */
+      flex: 0 0 90px !important;
+      justify-content: center;
+      align-content: center;
+      display: flex;
+    }
+
+    .punctuation-container {
+      padding-top: 17px;
+
+      .circle_punctuation {
+        font-size: 28px;
+        font-weight: 300;
+        color: #7A7A7A;
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        border: solid #B7B7B7 6px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        margin: auto;
+      }
+
+      .punctuation {
+        font-size: 16px;
+        color: rgb(104,104,104);
+        text-align: center;
+        margin-top: 2px;
+      }
+
+    }
+
+    // Special css
+    .comment-info {
+
+      @media (min-width: 351px) {
+        height: 128px;
+      }
+
+      @media (min-width: 370px), (max-width: 349px) {
+        height: 112px;
+      }
+
+      @media (min-width: 426px) {
+        height: 96px;
+      }
+
+      @media (min-width: 469px) {
+        height: 80px;
+      }
+
+      @media (min-width: 632px) {
+        height: 64px;
+      }
+
+    }
+
+
+    @media (max-width: 689px) {
+      margin: auto 12% !important;
+
+    }
+
+
+  }
+
+  // Max 360px
+  @media (max-width: 359px) {
+    padding-bottom: 56px;
+    padding-top: 47px;
+    .comments-container {
+      .comment-text, .comment-picture {
+        -webkit-flex : 0 0 100%; /* Safari 6.1+. iOS 7.1+, BB10 */
+        -ms-flex     : 0 0 100%; /* IE 10 */
+        flex         : 0 0 100%;
+        max-width    : 100%;
+      }
+
+      .comment-picture {
+        text-align    : center;
+        margin-bottom : 27px;
+      }
+
+      .comment-title, .comment-info {
+        text-align : center;
+      }
+
+      .comment-title {
+        margin : auto;
+      }
+      .comment-text {
+        padding-left : 4px !important;
+      }
+
+      .punctuation-container {
+        padding-top : 0;
+        .circle_punctuation {
+          font-size: 18px;
+          width        : 50px;
+          height       : 50px;
+          border-width : 5px;
+        }
+
+        .punctuation {
+          font-size   : 12px;
+          line-height : 15px;
+        }
+
+      }
+    }
+  }
+
+  // Max 560px
+  @media (max-width: 559px){
+    .comments-container {
+      .comment-text {
+        padding-left : 10px !important;
+
+      }
+
+      .comment-picture {
+        padding-left : 0 !important;
+      }
+    }
+  }
+
+  // Min 560px
+  @media (min-width: 560px) {
+    .comments-container {
+      .punctuation-container {
+        flex: 0 0 120px;
+        max-width: 120px;
+      }
+      .first-punctuation {
+
+        margin-left: auto;
+      }
+      .last-punctuation {
+        margin-right: auto;
+      }
+    }
+
+  }
+
+  // Min 860px
+  @media (min-width: 860px) {
+    .comments-container {
+      margin-left  : calc(((100vw - 140px) * 0.25 - 34px) / 2) !important;
+      margin-right : calc(((100vw - 140px) * 0.25 - 40px) / 2) !important;
+      max-width    : none;
+
+      .col-lg-2 {
+        -webkit-flex : 0 0 16.666667% !important; /* Safari 6.1+. iOS 7.1+, BB10 */
+        -ms-flex     : 0 0 16.666667% !important; /* IE 10 */
+        flex         : 0 0 16.666667% !important;
+        max-width    : 16.666667%;
+      }
+      .comment-picture {
+        height: auto;
+      }
+
+      .col-lg-2.punctuation-container {
+        -webkit-flex : 0 0 12%; /* Safari 6.1+. iOS 7.1+, BB10 */
+        -ms-flex     : 0 0 12%; /* IE 10 */
+        flex         : 0 0 12%;
+        max-width    : 12%;
+      }
+
+      .col-lg-4 {
+        -webkit-flex : 0 0 42%; /* Safari 6.1+. iOS 7.1+, BB10 */
+        -ms-flex     : 0 0 42%; /* IE 10 */
+        flex         : 0 0 42%;
+        max-width    : 42%;
+      }
+
+      .punctuation-container {
+        margin: {
+          left: auto;
+          right: auto;
+        }
+        max-width   : 98px;
+        padding-top : 0;
+      }
+
+    }
+  }
+
+  // Min 1200px
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+    margin: 0 auto;
+    .comments-container {
+      margin-left: auto !important;
+      margin-right: auto !important;
+      max-width: 904px;
+    }
+  }
+
+}
+
+.dynamic-pictures{
+  max-width: 80%;
+  margin: 0 auto 70px;
+}

@@ -1,0 +1,41 @@
+@import "../shared/styles/common-styles", "../shared/styles/animate";
+
+/* Slider */
+
+.dynamic-carousel {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  .slide, & {
+    background-color: #4d4d4d;
+  }
+  .carousel-content {
+    display: flex;
+  }
+  .slide {
+    height: 100%;
+    .slide-content{
+      opacity: 0.2;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+  .active.slide .slide-content{
+    opacity: 1;
+  }
+  .my-style {
+    width: auto !important;
+    height: auto !important;
+    border: none !important;
+  }
+  .my-style.item-carousel.next, .my-style.item-carousel.prev {
+    opacity: .3 !important;
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    background-size: inherit;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 6px;
+  }
+}

@@ -1,0 +1,18 @@
+<div class="carousel slide" [class.dualImages]="showDualImage">
+  <ol class="carousel-indicators" *ngIf="showIndicators">
+    <li *ngFor="let slidez of slides; let i = index;" [class.active]=" i === counter" (click)="indicatorChanges(i)">
+    </li>
+  </ol>
+
+  <div *ngFor="let step of slides; let i = index" [class.active]="i === counter || showDualImage == true && i === counter + 1" [attr.aria-hidden]="i !== counter"
+       class="item animated faster" [ngClass]="direction === 'next' ? 'slideInRight' : 'slideInLeft'"
+       (swipeleft)="swipe('next')" (swiperight)="swipe('prev')">
+    <ng-template [ngTemplateOutlet]="step.innerTemplate"></ng-template>
+  </div>
+  <a class="left carousel-control carousel-control-prev" [class.hideIndicators]="!showIndicators" (click)="swipe('prev')" [class.d-none]="slides.length === increase">
+    <span class="icon-prev carousel-control-prev-icon" aria-hidden="true"></span>
+  </a>
+  <a class="right carousel-control carousel-control-next" [class.hideIndicators]="!showIndicators" (click)="swipe('next')" [class.d-none]="slides.length === increase">
+    <span class="icon-next carousel-control-next-icon" aria-hidden="true"></span>
+  </a>
+</div>
