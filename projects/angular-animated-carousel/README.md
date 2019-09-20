@@ -13,6 +13,11 @@ You can install the package from our npm package
 npm install --save angular-animated-carousel
 ```
 
+### Dependencies
+```bash
+npm install --save hammerjs animate.css angular-resize-event
+```
+
 # Usage
 
 First you need to provide the AngularAnimatedCarouselModule to your desired Module
@@ -38,10 +43,10 @@ Now, you can use AngularAnimatedCarouselModule as follow:
             ... content of slide 1
         </lng-slide>
         <lng-slide>
-            ... content of slide 1
+            ... content of slide 2
         </lng-slide>
         <lng-slide>
-            ... content of slide 1
+            ... content of slide 3
         </lng-slide>
     </lng-carousel>
     ```
@@ -53,10 +58,10 @@ Now, you can use AngularAnimatedCarouselModule as follow:
             ... content of slide 1
         </lng-slide>
         <lng-slide>
-            ... content of slide 1
+            ... content of slide 2
         </lng-slide>
         <lng-slide>
-            ... content of slide 1
+            ... content of slide 3
         </lng-slide>
     </lng-carousel-dynamic>
     ```
