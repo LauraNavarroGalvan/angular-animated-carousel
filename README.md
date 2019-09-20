@@ -3,7 +3,7 @@
 AngularAnimatedCarousel is a lightweight, touchable and responsive library to create a carousel animated for angular 7
 
 # Demo
-demos available [here](https://angular-animated-carousel-demo.stackblitz.io)
+demos available [here](https://stackblitz.com/edit/angular-animated-carousel-demo)
 
 
 # Install
